@@ -20,6 +20,11 @@ services:
     depends_on:
       - db
     container_name: flask
+    environment:
+      FLASK_ENV: development
+      DATABASE_URI: postgres://postgres:postgres@db:5432/skej
+    volumes:
+      - ./migrations:/usr/src/app/migrations
     expose:
       - "3031"
 
