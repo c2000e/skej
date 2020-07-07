@@ -13,13 +13,13 @@
 ```json
 [
     {
-        "name": "Land on the moon"
-        "date": "1969-07-20 16:18:00"
+        "name": "Land on the moon",
+        "date": "1969-07-20 16:18:00",
         "status": "completed"
     },
     {
-        "name": "Land on Mars"
-        "date": "2030-12-31 23:59:59"
+        "name": "Land on Mars",
+        "date": "2030-12-31 23:59:59",
         "status": "in progress"
     }
 ]
@@ -39,8 +39,8 @@
 
 ```json
 {
-    "name": "Land on Mars"
-    "date": "2030-12-31 23:59:59"
+    "name": "Land on Mars",
+    "date": "2030-12-31 23:59:59",
     "status": "in progress"
 }
 ```
@@ -64,8 +64,8 @@ If a deadline with the given name already exists, nothing will be written.
 
 ```json
 {
-    "name": "Land on Mars"
-    "date": "2030-12-31 23:59:59"
+    "name": "Land on Mars",
+    "date": "2030-12-31 23:59:59",
     "status": "in progress"
 }
 ```
@@ -92,8 +92,8 @@ Only one argument must be supplied per request.
 
 ```json
 {
-    "name": "Land on Mars"
-    "date": "2030-12-31 23:59:59"
+    "name": "Land on Mars",
+    "date": "2030-12-31 23:59:59",
     "status": "in progress"
 }
 ```
