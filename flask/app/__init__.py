@@ -1,4 +1,3 @@
-import markdown
 import os
 
 from flask import Flask
@@ -12,11 +11,5 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-from .models import Deadline
-
-@app.route("/")
-def index():
-    with open(os.path.dirname(app.root_path) + '/README.md', 'r') as docs:
-        content = docs.read()
-        return markdown.markdown(content)
+from .routes import *
 
