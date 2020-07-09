@@ -60,6 +60,8 @@ If a deadline with the given name already exists, nothing will be written.
 
 **Responses**
 
+* `422 Unprocessable Entity` when invalid arguments are provided 
+
 * `201 Created` on success
 
 ```json
@@ -74,7 +76,7 @@ If a deadline with the given name already exists, nothing will be written.
 
 **Definition**
 
-`PUT /deadlines/<name>`
+`PATCH /deadlines/<name>`
 
 **Arguments**
 
@@ -85,6 +87,8 @@ If a deadline with the given name already exists, nothing will be written.
 Only one argument must be supplied per request.
 
 **Responses**
+
+* `422 Unprocessable Entity` when invalid arguments are provided
 
 * `404 Not Found` if the deadline does not exist
 
