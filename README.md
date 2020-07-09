@@ -1,5 +1,20 @@
 # skej
 
+Each response will be formatted as
+
+```json
+{
+    "message": <message>
+    <data>
+}
+```
+
+where the message is a description of what occured on the server,
+optionally followed by some relevant data, likely one or more deadlines.
+
+Following responses only detail what data will be returned on a successful
+request.
+
 ## List all deadlines
 
 **Definition**
