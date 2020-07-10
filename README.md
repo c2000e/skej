@@ -4,8 +4,8 @@ Each response will be formatted as
 
 ```json
 {
-    "message": <message>
-    <data>
+    "message": "message"
+    "data"
 }
 ```
 
